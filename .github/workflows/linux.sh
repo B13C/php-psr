@@ -14,6 +14,7 @@ function install_apt_packages() (
     ${SUDO} apt-get update
     ${SUDO} apt-get install -y composer jq lcov \
         php${PHP_VERSION}-dev \
+        php${PHP_VERSION}-bcmath \
         php${PHP_VERSION}-curl \
         php${PHP_VERSION}-xml \
         php${PHP_VERSION}-zip
